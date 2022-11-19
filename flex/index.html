@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid green;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .item {
+            width: 40px;
+            height: 30px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span class="item" style="order:5"><label>div1</label></span>
+        <span class="item"><label>div2</label></span>
+        <span class="item"><label>div3</label></span>
+        <span class="item"><label>div4</label></span>
+        <span class="item"><label>div5</label></span>
+        <span class="item"><label>div6</label></span>
+        <span class="item"><label>div7</label></span>
+    </div>
+</body>
+
+</html>
